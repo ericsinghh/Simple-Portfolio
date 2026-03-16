@@ -57,6 +57,13 @@ nav ul li a:hover{
     font-size: 1.01rem;
 }
 
+main hr{
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
+}
+
 .left {
     font-size: 1.5rem;
 }
@@ -65,7 +72,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 80px 0;
+    margin: 130px 0;
 }
 
 .firstSection > div{
@@ -73,17 +80,19 @@ nav ul li a:hover{
 }     
 
 .leftsection{
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 70px 0;
 }
 
 .rightSection img{
     width: 80%;
-    margin: 50px 0;
 }
 
 .purple {
     color: rgb(157, 104, 206);
+}
+ .text-gray{
+  color: gray; 
 }
    #element {
     color: rgb(157, 104, 206);
@@ -92,8 +101,13 @@ nav ul li a:hover{
         margin: 80vw;
         margin: auto;
     }
+
+    .secoundSection h1{
+      font-size: 1.9rem;
+    }
     </style>
   </head>
+
   <body>
     <header>
       <nav>
@@ -115,16 +129,18 @@ nav ul li a:hover{
           Hi, My name is <span class="purple">Eric</span>
 
           <div>and I am a passionate</div>
-          <div>Web Developer</div >
           <span id="element"></span> 
         </div>
         <div class="rightsection">
- <img src="programmer-working.png" alt="" />
+            <img src="bg.png" alt="">
       </div>
       </section>
-<hr>
+      <hr>
       <section class="secondSection">
-        <h1> Past Experience</h1>
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+      
+        <div class="box"></div>
       </section>
     </main>
 
@@ -133,8 +149,9 @@ nav ul li a:hover{
     <script>
       var typed = new typed('#element', {
         Strings: ['Web Developer', 'Video Editor', 'Graphic Designer'],  
-        typeSpeed: 50
+        typeSpeed: 50,
       }); 
     </script>
   </body>
+
 </html>
