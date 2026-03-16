@@ -34,7 +34,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 30px;
+    height: 80px;
     background-color: rgb(18, 18, 95);
     ;
 }
@@ -72,7 +72,7 @@ nav ul li a:hover{
     width: 30%;
 }     
 
-.leftsection {
+.leftsection{
     font-size: 4rem;
     margin: 70px 0;
 }
@@ -85,7 +85,13 @@ nav ul li a:hover{
 .purple {
     color: rgb(157, 104, 206);
 }
-
+   #element {
+    color: rgb(157, 104, 206);
+   }
+    .secoundSection {
+        margin: 80vw;
+        margin: auto;
+    }
     </style>
   </head>
   <body>
@@ -109,18 +115,24 @@ nav ul li a:hover{
           Hi, My name is <span class="purple">Eric</span>
 
           <div>and I am a passionate</div>
-          <div>Web Developer</div>
+          <div>Web Developer</div >
+          <span id="element"></span> 
         </div>
         <div class="rightsection">
  <img src="programmer-working.png" alt="" />
       </div>
       </section>
+<hr>
+      <section class="secondSection">
+        <h1> Past Experience</h1>
+      </section>
     </main>
 
-    <script src="https://unpkg://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- setup and start the typing animation -->
     <script>
       var typed = new typed('#element', {
-        Strings: ['Web Developer', 'Video Editor', 'Graphic Designer'],
+        Strings: ['Web Developer', 'Video Editor', 'Graphic Designer'],  
         typeSpeed: 50
       }); 
     </script>
