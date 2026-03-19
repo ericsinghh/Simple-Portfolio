@@ -35,11 +35,10 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: rgb(18, 18, 95);
-    ;
+    background-color: rgb(18, 18, 62);;
 }
 
-nav ul {
+nav ul{
     display: flex;
     justify-content: center;
 }
@@ -84,27 +83,35 @@ main hr{
     margin: 70px 0;
 }
 
-.rightSection img{
+.rightSection img {
     width: 80%;
 }
 
 .purple {
-    color: rgb(157, 104, 206);
+    color: rgb(70, 107, 228);
 }
  .text-gray{
   color: gray; 
 }
    #element {
-    color: rgb(157, 104, 206);
+    color: rgb(170, 107, 228);
    }
     .secoundSection {
-        margin: 80vw;
-        margin: auto;
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
     }
 
     .secoundSection h1{
       font-size: 1.9rem;
     }
+
+    .secoundSection box {
+      background: white;
+      width: 80vw
+      height: 2px;
+      margin: 56px 0;
+     }
     </style>
   </head>
 
@@ -129,29 +136,33 @@ main hr{
           Hi, My name is <span class="purple">Eric</span>
 
           <div>and I am a passionate</div>
-          <span id="element"></span> 
-        </div>
-        <div class="rightsection">
-            <img src="bg.png" alt="">
-      </div>
-      </section>
-      <hr>
-      <section class="secondSection">
-        <span class="text-gray">What I have done so far</span>
-        <h1>Work Experience</h1>
-      
-        <div class="box"></div>
-      </section>
-    </main>
+             <span id="element"></span>
+          </div>
+          <div class="righsection">
+      <img src="bg.png" alt="">
+          </div>
+          </section>
+<hr>
+          <section class="secondSection">
+            <span class="text-gray"> What i have done so far</span>
+            <h1>Work Experience</h1>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- setup and start the typing animation -->
-    <script>
-      var typed = new typed('#element', {
-        Strings: ['Web Developer', 'Video Editor', 'Graphic Designer'],  
-        typeSpeed: 50,
-      }); 
-    </script>
+
+            <div class="box">
+
+            </div>
+
+          </section>
+          </main>
+
+           <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+           <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Designer', 'Web Designer', 'video Editor'],
+      typeSpeed: 50,
+    });
+  </script>
   </body>
 
 </html>
